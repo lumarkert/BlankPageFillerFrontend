@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/dnd-react/"
+                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/pdf/"
             }
         }
     }
