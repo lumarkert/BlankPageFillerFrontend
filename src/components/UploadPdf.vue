@@ -66,7 +66,7 @@ export default {
       let formData = new FormData();
       formData.append('file', this.file);
       console.log(formData)
-      let address_pdf = process.env.NODE_ENV === 'production' ? 'https://pdf.lukasmarkert.de'
+      let address_pdf = process.env.NODE_ENV === 'production' ? 'https://pdf-back.lukasmarkert.de'
           : 'http://localhost:2222/pdf'
 
       axios.post(address_pdf, formData, {
