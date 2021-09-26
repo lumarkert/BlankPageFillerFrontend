@@ -57,7 +57,6 @@ export default {
   name: "UploadPdf",
   methods: {
     handleFileUpload() {
-      this.file = this.$refs.file.files[0]
       //this.fileExists = true;
       //this.link = window.URL.createObjectURL(this.file)
 
